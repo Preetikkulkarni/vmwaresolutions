@@ -15,10 +15,10 @@ subcollection: vmwaresolutions
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Caveonix RiskForesight overview
+# Caveonix Cloud overview
 {: #caveonix_considerations}
 
-The Caveonix RiskForesight™ service can help to manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations.
+The Caveonix Cloud™ service can help to manage cyberrisk and compliance risk with proactive monitoring and automated defense controls to protect against threats and to meet industry or government regulations.
 {: shortdesc}
 
 {{site.data.keyword.vmwaresolutions_full}} offers promotions for some services. Promotional pricing offers a number of months free of charge for a service’s licenses, if the service has license charges. For more information, see [Promotions for VMware Solutions services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-service-promotions).
@@ -26,21 +26,21 @@ The Caveonix RiskForesight™ service can help to manage cyberrisk and complianc
 The current Caveonix RiskForesight version that is installed is 3.1.0.
 {: note}
 
-A Caveonix RiskForesight license is valid for five years. Ordering Caveonix RiskForesight for VMware® vCenter Server instances, VMware Regulated Workloads, and Security and Compliance Readiness Bundle instances differs. For more information, see [Licenses and fees](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations#caveonix_considerations-tech-specs-license-fee).
+A Caveonix Cloud license is valid for five years. Ordering Caveonix Cloud for VMware® vCenter Server instances, VMware Regulated Workloads, and Security and Compliance Readiness Bundle instances differs. For more information, see [Licenses and fees](/docs/vmwaresolutions?topic=vmwaresolutions-caveonix_considerations#caveonix_considerations-tech-specs-license-fee).
 
 ## Technical specifications for Caveonix RiskForesight
 {: #caveonix_considerations-specs}
 
 For more information about resource requirements and capacity checking for some services, see [Resource requirements for services](/docs/vmwaresolutions?topic=vmwaresolutions-vc_addingservices#vc_addingservices-resource-requirements).
 
-The following components are ordered and included in the Caveonix RiskForesight service.
+The following components are ordered and included in the Caveonix Cloud service.
 
 ### vCenter Server resources
 {: #caveonix_considerations-tech-specs-vcenter}
 
 * CPU - 8 CPUs
 * RAM - 32 GB
-* Disk - 100 GB
+* Disk - 300 GB
 
 ### Network
 {: #caveonix_considerations-tech-specs-network}
@@ -50,27 +50,27 @@ A dedicated private subnet with 32 IP addresses is ordered.
 ### Licenses and fees
 {: #caveonix_considerations-tech-specs-license-fee}
 
-A Caveonix RiskForesight license key is ordered for each instance of the service.
+A Caveonix Cloud license key is ordered for each instance of the service.
 
-If you order Caveonix RiskForesight for a VMware Regulated Workloads or Security and Compliance Readiness Bundle instance, you are charged for a per-host license for every host on the instance. This way of charging for Caveonix RiskForesight is new in Version 4.1. However, you are not charged for per-VM licenses.
+If you order Caveonix Cloud for a VMware Regulated Workloads or Security and Compliance Readiness Bundle instance, you are charged for a per-host license for every host on the instance. This way of charging for Caveonix RiskForesight is new in Version 4.1. However, you are not charged for per-VM licenses.
 
-If you order Caveonix RiskForesight for a VMware vCenter Server® instance, you are charged for the number of per-VM licenses that you choose at installation. This method of charging for Caveonix RiskForesight is the same as in previous releases. You can select 10 - 25,000 VMs to license.
+If you order Caveonix Cloud for a VMware vCenter Server® instance, you are charged for the number of per-VM licenses that you choose at installation. This method of charging for Caveonix Cloud is the same as in previous releases. You can select 10 - 25,000 VMs to license.
 
-If you order Caveonix RiskForesight for a VMware Regulated Workloads or VMware Security and Compliance Readiness Bundle instance, the host-based licenses are hidden. Caveonix RiskForesight is deployed with a 25,000 VM key. You do not need to upgrade.
+If you order Caveonix Cloud for a VMware Regulated Workloads or VMware Security and Compliance Readiness Bundle instance, the host-based licenses are hidden. Caveonix Cloud is deployed with a 25,000 VM key. You do not need to upgrade.
 
-Caveonix RiskForesight licenses that are ordered separately from the Resources page are not per-host. Therefore, it is recommended that you do not order new Caveonix RiskForesight licenses and apply the key to your Caveonix RiskForesight service on Regulated Workloads or Security and Compliance Readiness Bundle instances. Ordering in this way will:
+Caveonix Cloud licenses that are ordered separately from the Resources page are not per-host. Therefore, it is recommended that you do not order new Caveonix Cloud licenses and apply the key to your Caveonix Cloud service on Regulated Workloads or Security and Compliance Readiness Bundle instances. Ordering in this way will:
 
 * Provide less coverage than when the license was initially deployed
-* Result in you being charged twice for Caveonix RiskForesight licenses because your initial license cannot be canceled. Therefore, you would pay for both per-host and per-VM licensing.
+* Result in you being charged twice for Caveonix Cloud licenses because your initial license cannot be canceled. Therefore, you would pay for both per-host and per-VM licensing.
 
 You can still order Caveonix RiskForesight licenses for other types of instances, for example, for VMware vServer Center instances.
 
-## Considerations when you delete Caveonix RiskForesight
+## Considerations when you delete Caveonix Cloud
 {: #caveonix_considerations-remove}
 
 Review the following considerations before you delete the service:
 
-* Deleting Caveonix RiskForesight automatically deletes the initial Caveonix RiskForesight license originally associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix RiskForesight Licenses** table on the Resources page in the VMware Solutions console.
+* Deleting Caveonix Cloud automatically deletes the initial Caveonix Cloud license originally associated with the service. However, you need to manually delete any other unwanted licenses from the **Caveonix Cloud Licenses** table on the Resources page in the VMware Solutions console.
 * When you delete the service, the {{site.data.keyword.vmwaresolutions_short}} automation deletes only the single all-in-one Caveonix virtual machine (VM) that was deployed and the dedicated private subnet that was ordered for it. Therefore,
    * If you scaled out the Caveonix VM into multiple VMs, those additional VMs are not deleted.
    * If you used the IP addresses of the dedicated private subnet on more VMs, those VMs must be assigned new IP addresses to continue to function.
